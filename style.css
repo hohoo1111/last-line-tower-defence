@@ -11,3 +11,15 @@ html{min-height:100%;-webkit-text-size-adjust:100%}body{padding:env(safe-area-in
 body{background:#17221d;color:#eee6cd}header{background:linear-gradient(110deg,#23372e,#18251f);border-color:#615e43}.brand{color:#eddb9e}.brand small,aside>small{color:#baa775}.stats b{color:#f8eac4}button{background:linear-gradient(#465443,#303e32);border-color:#78816a;border-radius:7px;box-shadow:inset 0 1px #ffffff15,0 2px 3px #0003}.primary{background:linear-gradient(#e7cf91,#bba265);color:#2b2d20;border:1px solid #f2dc9e}.field{border-color:#8b8660;border-radius:10px;box-shadow:0 6px 22px #0004}aside{background:linear-gradient(140deg,#344036,#202d26);border-color:#7a7960;border-radius:10px}p,.card small{color:#c4c4a8}.detail{background:#17261f}.detail small{color:#a9b193}.wavebox{border-color:#7a7960;background:transparent}.card{background:linear-gradient(#455346,#303c31)}footer{color:#a6b294}#overlay{background:radial-gradient(ellipse at center,#21382eed,#101d17f5)}article h1{color:#f1dfa2;text-shadow:0 3px 1px #0006}article p{color:#d2d3b7}.label{color:#eff0c8;text-shadow:0 1px 3px #24351f}.rotate{color:#d9c58f}@media(orientation:portrait) and (max-width:700px){header{background:#1d2f25f5}}
 
 .trap-panel{margin-top:16px;padding-top:14px;border-top:1px solid #7a7960}.trap-buttons{display:flex;gap:8px;margin-top:10px}.trap-buttons button{flex:1;min-height:48px}.trap-buttons .armed{outline:3px solid #edcf83;background:#76613d}.trap-panel p{font-size:12px;margin:8px 0}.trap-panel small{color:#c4c4a8}
+
+/* Landscape battlefield fills all space beside a compact, separate control rail. */
+@media(orientation:landscape) and (max-height:600px){
+body{height:100dvh;overflow:hidden;display:flex;flex-direction:column}
+header{height:48px;min-height:48px;padding:2px 8px}.brand small{display:none}.stats{gap:14px}.stats b{font-size:18px}header button{min-height:44px;padding:5px 8px;font-size:12px}
+main{flex:1;min-height:0;height:auto;width:100%;max-width:none;margin:0;padding:0;gap:0;grid-template-columns:minmax(0,1fr) 166px}
+.field{align-self:stretch;height:100%;border:0;border-radius:0;box-shadow:none}canvas{width:100%;height:100%;aspect-ratio:auto;object-fit:fill}
+aside{min-height:0;padding:6px;gap:5px;overflow:auto;border-radius:0;border-width:0 0 0 1px;overscroll-behavior:contain}aside>small,#selection,#description,.card small,.trap-panel>strong,.trap-panel>small,#trap-help,#preview,footer,.rotate{display:none}
+#cards{gap:5px}.card{min-height:44px;padding:8px 6px;font-size:12px}.card strong{align-items:center;gap:3px}.detail{padding:6px;gap:5px;font-size:12px}.detail small{font-size:10px}#detail button{min-height:44px;font-size:12px;padding:7px 4px}
+.trap-panel{margin:0;padding-top:5px}.trap-buttons{gap:5px;margin:0}.trap-buttons button{min-height:44px;padding:6px 3px;font-size:12px}.trap-buttons .armed{outline-width:2px;outline-offset:-2px}
+.wavebox{position:static;margin-top:auto;padding-top:5px;padding-bottom:0;font-size:11px}.wavebox button{min-height:44px;margin-top:5px;padding:7px;font-size:12px}#notice{font-size:11px;min-height:0}.label{top:7px;left:8px;font-size:8px}#banner{top:25px}
+}
