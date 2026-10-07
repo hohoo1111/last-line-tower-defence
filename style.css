@@ -23,3 +23,9 @@ aside{min-height:0;padding:6px;gap:5px;overflow:auto;border-radius:0;border-widt
 .trap-panel{margin:0;padding-top:5px}.trap-buttons{gap:5px;margin:0}.trap-buttons button{min-height:44px;padding:6px 3px;font-size:12px}.trap-buttons .armed{outline-width:2px;outline-offset:-2px}
 .wavebox{position:static;margin-top:auto;padding-top:5px;padding-bottom:0;font-size:11px}.wavebox button{min-height:44px;margin-top:5px;padding:7px;font-size:12px}#notice{font-size:11px;min-height:0}.label{top:7px;left:8px;font-size:8px}#banner{top:25px}
 }
+
+html{overscroll-behavior:none}body{overscroll-behavior:none}dialog{max-width:460px;width:calc(100% - 32px);border:1px solid #a79a68;border-radius:12px;background:#24372c;color:#eee6cd;padding:22px}dialog::backdrop{background:#08140be6}dialog p{margin:14px 0}dialog button{width:100%}
+@media(orientation:landscape) and (max-height:600px){
+header{position:absolute;z-index:4;right:env(safe-area-inset-right);top:env(safe-area-inset-top);width:166px;height:132px;min-height:0;padding:4px 6px;display:flex;flex-direction:column;gap:4px;border:0;border-left:1px solid #7a7960;background:#24372c}.brand{display:none}.stats{width:100%;justify-content:space-between;gap:5px;font-size:9px}.stats b{font-size:16px}header>div:last-child{display:grid;grid-template-columns:1fr 1fr;gap:4px;width:100%}header button{font-size:11px;min-height:44px;padding:4px}#fullscreen{grid-column:1/-1}
+main{height:100%;flex:1}.field{height:100%}aside{margin-top:132px;height:calc(100% - 132px);align-self:start}.label{display:none}#banner{top:10px}
+}
