@@ -36,3 +36,5 @@ main{height:100%;flex:1}.field{height:100%}aside{margin-top:132px;height:calc(10
 @media(orientation:portrait) and (max-width:700px){.game-controls{gap:3px}.game-controls button{font-size:10px;padding:6px 4px}}
 
 .field{background:#203a2a;box-shadow:inset 0 0 0 1px #d2bd8222,0 7px 24px #0005}.card{box-shadow:inset 0 1px #e9deb51c,0 2px 5px #0003}.primary{box-shadow:inset 0 1px #fff3ce88,0 2px 5px #0004}aside{background:linear-gradient(130deg,#2f4135,#1b2d25)}
+
+#season-label{display:block;top:8px;left:8px;padding:5px 9px;border-radius:5px;background:#172b21c9;border:1px solid #d1d5b744;color:#f4ecd4;font-size:11px;letter-spacing:.5px;z-index:2;pointer-events:none}@media(orientation:landscape) and (max-height:600px){#banner{top:34px}#season-label{font-size:10px;padding:4px 7px}}
